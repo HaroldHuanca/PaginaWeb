@@ -96,3 +96,7 @@ body{
 .textColor{
     color:rgb(53, 32, 245);
 }
+
+img{
+    margin:0 auto;
+}
