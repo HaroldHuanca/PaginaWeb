@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="script.js"></script>
+
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="mensaje();">ABRIR MENSAJE</button>
-    <div id="contenido" >Saludo</div>
+    <div id="contenido">Saludo</div>
     <button onclick="agregarContenido();">AGREGAR CONTENIDO</button>
     <div>ESPACIO PARA LA IMAGEN</div>
     <button onclick="mostrarImagen();">MOSTRAR IMAGEN</button>
     <img id="imagen" src="#" alt="Sin imagen">
+    <label>Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <button onclick="saludo();">SALUDO</button>
+    <h1>SUMAR</h1>
+    <label>Numero1:</label>
+    <input type="number" name="num1" id="num1">
+    <label>Numero2:</label>
+    <input type="number" name="num2" id="num2">
+    <button onclick="sumar();">SUMAR</button>
+    <label>Resultado:</label>
+    <button onclick="dividir();">DIVIDIR</button>
+    <label id="resultado">?</label>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <button onclick="mensajeSweet();">MENSAJE CON LIBRERIA</button>
+    <br>
+    <button onclick="graficar();">GRAFICAR</button>
+    <div class="container">
+        <canvas id="myChart" width="400" height="500"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

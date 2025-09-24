@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .oscuro{
+            background-color: rgb(32, 28, 28);
+            color: #FFFFFF;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body id="main">
+    <h1 id="titulo">TITULO DE LA PAGINA</h1>
+    <a href="#" id="cambiar">CambiarTexto</a>
+    <a href="#" id="alert">Abrir una Alerta</a>
+    <a href="#" id="agregar">Agregar</a>
+
+    <div>
+        <label>INGRESE SU NOMBRE:</label>
+        <input type="text" id="nombre">
+        <button id="agregarDato">Agregar Dato</button>
+        <ol id="lista"></ol>
+    </div>
+
+    <button id="btnOscuro">OSCURO</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#btnOscuro").click(function(){
+            $("#main").toggleClass("oscuro");
+        });
+        $("#agregarDato").click(function () {
+            $("#lista").append("<li>"+$("#nombre").val()+"</li>");
+        }); S
+        $("#agregar").click(function () {
+            $("#titulo").append("Hola :v");
+        });
+        $("#alert").click(function () {
+            alert("Hola, soy una alerta");
+        });
+        $("#cambiar").click(function () {
+            $("#titulo").text("UN TEXTO MUCHO MAS INCREIBLE QUE EL ANTERIOR :V");
+        });
+        $("#titulo").text("NUEVO TEXTO");
+    </script>
+</body>
+
+</html>
